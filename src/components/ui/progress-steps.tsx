@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Loader2, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { TextEffect } from "./text-effect";
 import { Spinner } from "./spinner";
@@ -34,7 +33,6 @@ const ProgressSteps: React.FC<ProgressStepsProps> = ({
   const [stepList, setStepList] = useState<Step[]>(() =>
     steps.map((step) => ({ text: step, state: "pending" }))
   );
-  const [currentStepIndex, setCurrentStepIndex] = useState(-1);
   const [isProcessing, setIsProcessing] = useState(false);
   const startProcessing = async () => {
     if (isProcessing) return;
@@ -42,8 +40,6 @@ const ProgressSteps: React.FC<ProgressStepsProps> = ({
     setIsProcessing(true);
 
     for (let i = 0; i < steps.length; i++) {
-      setCurrentStepIndex(i);
-
       // Set current step to loading
       setStepList((prev) =>
         prev.map((step, index) =>
@@ -61,8 +57,6 @@ const ProgressSteps: React.FC<ProgressStepsProps> = ({
         )
       );
     }
-
-    setCurrentStepIndex(-1);
     setIsProcessing(false);
     onComplete?.();
   };

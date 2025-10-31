@@ -2,7 +2,6 @@
 import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import ProgressSteps from "../ui/progress-steps";
 import { ChevronRight, Sparkles } from "lucide-react";
 import { AuroraBackground } from "../ui/aura-bg";

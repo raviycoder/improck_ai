@@ -1,36 +1,222 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Improck AI - Landing Page
 
-## Getting Started
+A modern, responsive landing page for Improck AI - an intelligent job application automation platform that helps job seekers land their dream jobs 10x faster.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-15.5.2-black?style=flat-square&logo=next.js)
+![React](https://img.shields.io/badge/React-19.1.0-blue?style=flat-square&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?style=flat-square&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.x-38bdf8?style=flat-square&logo=tailwind-css)
 
+## ✨ Features
+
+- 🎨 **Modern Design** - Beautiful gradient themes with blue-purple color scheme
+- 🌓 **Dark/Light Mode** - Fully functional theme toggle with system preference detection
+- 📱 **Fully Responsive** - Optimized for mobile, tablet, and desktop devices
+- ⚡ **Performance** - Built with Next.js 15 and React 19 for optimal speed
+- 🎭 **Animations** - Smooth animations powered by Framer Motion
+- 🧩 **Component-Based** - Modular and reusable UI components
+- 🎯 **SEO Optimized** - Proper meta tags and semantic HTML structure
+
+## 📋 Sections
+
+1. **Hero Section** - Eye-catching introduction with animated progress steps
+2. **Issue Section** - Highlighting job search pain points with sticky scroll cards
+3. **Solution Section** - 3-step process explaining how Improck solves problems
+4. **Features Section** - Key features with interactive cards
+5. **Testimonials** - Auto-scrolling customer testimonials
+6. **Pricing Section** - Flexible pricing plans with monthly/yearly toggle
+7. **FAQ Section** - Accordion-based frequently asked questions
+8. **Call to Action** - Final conversion section with typewriter effect
+9. **Footer** - Complete footer with links, newsletter, and theme toggle
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js 15.5.2](https://nextjs.org/) (App Router)
+- **Language:** [TypeScript 5.x](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS 4.x](https://tailwindcss.com/)
+- **UI Components:** [Radix UI](https://www.radix-ui.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Theme:** [next-themes](https://github.com/pacocoursey/next-themes)
+
+## 📦 Installation
+
+### Prerequisites
+
+- Node.js 18.x or later
+- Bun (recommended) or npm/yarn/pnpm
+
+### Steps
+
+1. **Clone the repository**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/raviycoder/improck_ai.git
+cd improck_landing_page
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install dependencies**
+```bash
+# Using Bun (recommended)
+bun install
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Or using npm
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Or using yarn
+yarn install
+```
 
-## Learn More
+3. **Run the development server**
+```bash
+# Using Bun
+bun dev
 
-To learn more about Next.js, take a look at the following resources:
+# Or using npm
+npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Or using yarn
+yarn dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Open your browser**
 
-## Deploy on Vercel
+Navigate to [http://localhost:3000](http://localhost:3000) to see the application.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Build & Deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Build for Production
+
+```bash
+# Using Bun
+bun run build
+
+# Or using npm
+npm run build
+```
+
+### Start Production Server
+
+```bash
+# Using Bun
+bun start
+
+# Or using npm
+npm start
+```
+
+### Deploy on Vercel
+
+The easiest way to deploy this Next.js app is using the [Vercel Platform](https://vercel.com/new):
+
+1. Push your code to GitHub
+2. Import your repository on Vercel
+3. Vercel will automatically detect Next.js and configure the build settings
+4. Click "Deploy"
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/raviycoder/improck_ai)
+
+## 📁 Project Structure
+
+```
+improck_landing_page/
+├── public/                 # Static assets
+│   ├── image-hero.png
+│   └── ...
+├── src/
+│   ├── app/               # Next.js app directory
+│   │   ├── favicon.ico
+│   │   ├── globals.css    # Global styles
+│   │   ├── layout.tsx     # Root layout with theme provider
+│   │   └── page.tsx       # Home page
+│   ├── components/
+│   │   ├── sections/      # Page sections
+│   │   │   ├── hero-section.tsx
+│   │   │   ├── issue-section.tsx
+│   │   │   ├── solution-section.tsx
+│   │   │   ├── feature-section.tsx
+│   │   │   ├── testimonials-section.tsx
+│   │   │   ├── price-section.tsx
+│   │   │   ├── faq-section.tsx
+│   │   │   ├── call-to-section.tsx
+│   │   │   ├── footer-section.tsx
+│   │   │   └── header.tsx
+│   │   ├── ui/            # Reusable UI components
+│   │   │   ├── button.tsx
+│   │   │   ├── card.tsx
+│   │   │   ├── feature-card.tsx
+│   │   │   ├── progress-steps.tsx
+│   │   │   └── ...
+│   │   └── svg/           # SVG components
+│   │       └── improck-logo.tsx
+│   └── lib/
+│       └── utils.ts       # Utility functions
+├── components.json        # shadcn/ui config
+├── tailwind.config.ts     # Tailwind configuration
+├── tsconfig.json          # TypeScript configuration
+└── package.json           # Dependencies
+```
+
+## 🎨 Color Scheme
+
+- **Primary Blue:** `#3B82F6` (blue-600) → `#60A5FA` (blue-400) in dark mode
+- **Primary Purple:** `#9333EA` (purple-600) → `#A855F7` (purple-400) in dark mode
+- **Gradients:** Blue to Purple for brand consistency
+- **Backgrounds:** White/Gray-50 (light) → Gray-950/Gray-900 (dark)
+
+## 🔧 Customization
+
+### Adding New Sections
+
+1. Create a new component in `src/components/sections/`
+2. Import and add it to `src/app/page.tsx`
+3. Add navigation link in `src/components/sections/header.tsx`
+
+### Changing Theme Colors
+
+Edit the color values in:
+- `src/app/globals.css` for CSS variables
+- Component files for Tailwind classes
+
+### Modifying Content
+
+All content is directly in the component files for easy customization:
+- Hero text: `hero-section.tsx`
+- Pricing plans: `price-section.tsx`
+- Testimonials: `testimonials-section.tsx`
+- FAQ: `faq-section.tsx`
+
+## 📄 Scripts
+
+```bash
+# Development
+bun dev          # Start dev server
+
+# Production
+bun run build    # Build for production
+bun start        # Start production server
+
+# Linting
+bun run lint     # Run ESLint
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 👤 Author
+
+**Ravi Yadav**
+- GitHub: [@raviycoder](https://github.com/raviycoder)
+
+## 🙏 Acknowledgments
+
+- [Next.js](https://nextjs.org/) for the amazing framework
+- [Tailwind CSS](https://tailwindcss.com/) for utility-first styling
+- [Radix UI](https://www.radix-ui.com/) for accessible components
+- [Framer Motion](https://www.framer.com/motion/) for smooth animations
+- [Lucide](https://lucide.dev/) for beautiful icons
+
+---
+
+Made with ❤️ by Ravi Yadav
+
