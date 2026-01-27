@@ -15,6 +15,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "user-gen-media-assets.s3.amazonaws.com",
       },
+      {
+        protocol: "https",
+        hostname: "ui-avatars.com",
+      },
     ],
   },
   /* config options here */

@@ -5,70 +5,79 @@ import { TestimonialsColumn } from "../testimonials-columns";
 const testimonials = [
   {
     text: "Improck helped me land my dream job in just 3 weeks! The AI automatically applied to 150+ positions while I focused on interview prep. Game changer!",
-    image: "https://randomuser.me/api/portraits/women/1.jpg",
+    image:
+      "https://ui-avatars.com/api/?name=Sarah+Johnson&background=8B5CF6&color=fff&size=128",
     name: "Sarah Johnson",
     role: "Software Engineer at Google",
   },
   {
     text: "After months of manual job applications with no luck, Improck got me 12 interviews in the first month. The automated system is incredibly smart.",
-    image: "https://randomuser.me/api/portraits/men/2.jpg",
+    image:
+      "https://ui-avatars.com/api/?name=Michael+Chen&background=8B5CF6&color=fff&size=128",
     name: "Michael Chen",
     role: "Data Scientist at Microsoft",
   },
   {
     text: "The AI profile optimization was spot on. It identified skills I didn't even highlight and matched me with perfect roles. Worth every penny!",
-    image: "https://randomuser.me/api/portraits/women/3.jpg",
+    image:
+      "https://ui-avatars.com/api/?name=Emily+Rodriguez&background=8B5CF6&color=fff&size=128",
     name: "Emily Rodriguez",
     role: "Marketing Manager at Adobe",
   },
   {
     text: "As a recent graduate, job hunting was overwhelming. Improck automated everything and I received my first offer within 2 weeks!",
-    image: "https://randomuser.me/api/portraits/men/4.jpg",
+    image:
+      "https://ui-avatars.com/api/?name=David+Park&background=10B981&color=fff&size=128",
     name: "David Park",
     role: "Product Manager at Spotify",
   },
   {
     text: "The real-time analytics showed me exactly what was working. I could track my application success rate and optimize my profile accordingly.",
-    image: "https://randomuser.me/api/portraits/women/5.jpg",
+    image:
+      "https://ui-avatars.com/api/?name=Jessica+Williams&background=F59E0B&color=fff&size=128",
     name: "Jessica Williams",
     role: "UX Designer at Airbnb",
   },
   {
     text: "Switching careers felt impossible until Improck. The AI matched my transferable skills to new industries I never considered. Amazing!",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    image:
+      "https://ui-avatars.com/api/?name=Amanda+Taylor&background=EF4444&color=fff&size=128",
     name: "Amanda Taylor",
     role: "Business Analyst at Tesla",
   },
   {
     text: "The automated cover letter generation saved me hours. Each one was perfectly tailored to the job description. Brilliant technology!",
-    image: "https://randomuser.me/api/portraits/men/7.jpg",
+    image:
+      "https://ui-avatars.com/api/?name=James+Wilson&background=6366F1&color=fff&size=128",
     name: "James Wilson",
     role: "Sales Director at Salesforce",
   },
   {
     text: "I was skeptical about AI job hunting, but Improck's results speak for themselves. 200+ applications, 15 interviews, 3 offers. Incredible!",
-    image: "https://randomuser.me/api/portraits/women/8.jpg",
+    image:
+      "https://ui-avatars.com/api/?name=Lisa+Thompson&background=14B8A6&color=fff&size=128",
     name: "Lisa Thompson",
     role: "HR Director at Netflix",
   },
   {
     text: "The 24/7 automation meant I was applying to jobs while I slept. Woke up to interview invitations multiple times. This is the future!",
-    image: "https://randomuser.me/api/portraits/men/9.jpg",
+    image:
+      "https://ui-avatars.com/api/?name=Robert+Davis&background=0EA5E9&color=fff&size=128",
     name: "Robert Davis",
     role: "DevOps Engineer at Amazon",
   },
 ];
 
-
 const firstColumn = testimonials.slice(0, 3);
 const secondColumn = testimonials.slice(3, 6);
 const thirdColumn = testimonials.slice(6, 9);
 
-
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="relative py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-white via-gray-50 to-white dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 overflow-hidden">
-
+    <section
+      id="testimonials"
+      className="relative py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-white via-gray-50 to-white dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 overflow-hidden"
+    >
       <div className="container z-10 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -92,27 +101,28 @@ const Testimonials = () => {
             </span>
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-3xl transition-colors duration-300">
-            Join thousands of professionals who transformed their job search with Improck&apos;s AI-powered automation.
+            Join thousands of professionals who transformed their job search
+            with Improck&apos;s AI-powered automation.
           </p>
         </motion.div>
 
         <div className="flex justify-center gap-4 sm:gap-6 lg:gap-8 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[740px] overflow-hidden">
-          <TestimonialsColumn 
-            testimonials={firstColumn} 
+          <TestimonialsColumn
+            testimonials={firstColumn}
             duration={15}
-            pauseOnHover={true}  // Pause on hover
+            pauseOnHover={true} // Pause on hover
           />
-          <TestimonialsColumn 
-            testimonials={secondColumn} 
-            className="hidden md:block" 
+          <TestimonialsColumn
+            testimonials={secondColumn}
+            className="hidden md:block"
             duration={19}
-            pauseOnHover={true}  // Pause on hover
+            pauseOnHover={true} // Pause on hover
           />
-          <TestimonialsColumn 
-            testimonials={thirdColumn} 
-            className="hidden lg:block" 
+          <TestimonialsColumn
+            testimonials={thirdColumn}
+            className="hidden lg:block"
             duration={17}
-            pauseOnHover={true}  // Pause on hover
+            pauseOnHover={true} // Pause on hover
           />
         </div>
       </div>
